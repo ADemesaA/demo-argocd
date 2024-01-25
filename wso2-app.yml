@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: wso2-appbundle
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: wso2
+    name: in-cluster
+  project: wso2-appbundle-project
+  source:
+    path: wso2-apps/
+    repoURL: https://github.com/ADemesaA/demo-argocd.git
+    targetRevision: HEAD
