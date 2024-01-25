@@ -7,9 +7,9 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: default
+    namespace: cicd
     name: in-cluster
-  project: appbundle-project-dev
+  project: cicd-appbundle-project
   source:
     path: cicd-apps/
     repoURL: https://github.com/ADemesaA/demo-argocd.git
