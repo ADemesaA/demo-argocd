@@ -17,7 +17,7 @@ spec:
           value: jenkins.demo.mx
     chart: jenkins
     repoURL: https://charts.jenkins.io
-    targetRevision: 4.3.30
+    targetRevision: 4.12.1
   syncPolicy:
     retry:
       backoff:
