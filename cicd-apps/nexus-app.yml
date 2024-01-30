@@ -16,7 +16,7 @@ spec:
         - name: ingress.hostRepo
           value: nexus.demo.mx
         - name: ingress.ingressClassName
-          value: traefik
+          value: public
     chart: nexus-repository-manager
     repoURL: https://sonatype.github.io/helm3-charts/
     targetRevision: 61.0.2
