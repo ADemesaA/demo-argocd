@@ -9,18 +9,12 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    helm:
-      parameters:
-        - name: server.ha.enabled
-          value: "true"
-        - name: server.ha.raft.enabled
-          value: "true"
-#        - name: ingress.enabled
-#          value: 'true'
-#        - name: ingress.hostRepo
-#          value: nexus.demo.mx
-#        - name: ingress.ingressClassName
-#          value: public
+#    helm:
+#      parameters:
+#        - name: server.ha.enabled
+#          value: "true"
+#        - name: server.ha.raft.enabled
+#          value: "true"
     chart: vault
     repoURL: https://helm.releases.hashicorp.com
     targetRevision: 0.20.0
