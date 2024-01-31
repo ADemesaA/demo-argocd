@@ -17,7 +17,7 @@ spec:
 #          value: "true"
     chart: vault
     repoURL: https://helm.releases.hashicorp.com
-    targetRevision: 0.20.0
+    targetRevision: 0.25.0
   syncPolicy:
     retry:
       backoff:
